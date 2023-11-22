@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: auto;
+    align-items: center;
+    height: 100vh;
+   
+    background: url("fundo.jpg") top center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    display: block;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: azure;
+    text-align: center;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: azure;
+    text-align: center;
+    align-items: center;
+}
+
+select,
+input,
+button {
+    margin: 0 auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.677);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px;
+    color: azure;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    display: block;
+}
+
+button {
+    background-color: #007bff;
+    color: azure;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+button:hover {
+    background-color: #0cb300;
+}
+
+p {
+    font-size: 22px;
+    white-space: pre-line;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    color: azure;
+    text-align: center;
+}
+
+
+.Apagar {
+    background-color: #ff0000;
+    color: azure;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.Apagar:hover {
+    background-color: #5f0000;
+}
+
+.imprimir {
+    background-color: #c6cd00;
+    color: azure;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.imprimir:hover {
+    background-color: #999600;
+}

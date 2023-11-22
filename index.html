@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sistema de Viagens</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!-- Input do metodo de tranporte-->
+        <h1>Sistema de Viagens</h1>
+        <label for="tranporte">Selecione o Método de Tranporte:</label>
+        <select id="transporte">
+            <option value="1">Carro</option>
+            <option value="2">Avião</option>
+            <option value="3">Trem</option>
+            <option value="4">Ônibus</option>
+            <option value="5">Andando</option>
+        </select><br><br>
+
+        <!-- Input do Estado-->
+        <select id="estado" onchange="buscaCidades(this.value)">
+            <option value="ERRO">Selecione o Estado Destino</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select>
+        <br>
+        <!-- Input da cidade-->
+        <select id="cidade">
+        </select>
+
+        <button onclick="calcular()">Calcular </button><br><br>
+
+        <p>Distancia: <span id="distancia"></span></p>
+        <p>Porcentagem de Aprovação dos turistas:<span id="porcentagem"></span></p>
+        <p>Pontos Turísticos: <span id="pontos_turisticos"></span></p>
+        <p>Dias de Viagem Total (Ida - Volta): <span id="dias_viagem"></span></p>
+
+        <br><br><br><h1>LocalStorage</h1>
+
+        <p><button class="Apagar" onclick="deleteAllData()">Apagar tudo - LocalStorage</button></p>
+
+        <p>Informe a Chave do LocalStorage: <input type="text" id="keyName" /></p>
+
+        <p><button class="Apagar" onclick="deleteSpecificData()">Apagar específico</button></p>
+
+        <p><button class="imprimir" onclick="saveDataToLocalStorage()">Imprimir Dados.</button></p>
+        <p>Dados Salvos: <span id="Exibir"></span></p>
+
+        <script src="script.js"></script>
+        <script src="json-cidades.js"></script>
+    </body>
+</html>
